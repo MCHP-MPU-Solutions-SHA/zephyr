@@ -101,3 +101,27 @@
 &pit64b0 {
 	clock-frequency = <DT_FREQ_M(10)>;
 };
+
+&tc0_ch0 {
+	status = "okay";
+};
+
+&tc0_ch1 {
+	status = "okay";
+};
+
+&tc0_ch2 {
+	status = "okay";
+};
+
+&tc1_ch0 {
+	status = "okay";
+};
+
+&tc1_ch1 {
+	status = "okay";
+};
+
+&tc1_ch2 {
+	status = "okay";
+};
