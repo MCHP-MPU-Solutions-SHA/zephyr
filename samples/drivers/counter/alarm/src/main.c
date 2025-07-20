@@ -82,6 +82,8 @@ struct counter_alarm_cfg alarm_cfg;
 #define TIMER DT_NODELABEL(pit64b1)
 #undef ALARM_FLAGS
 #define ALARM_FLAGS COUNTER_ALARM_CFG_ABSOLUTE
+#elif defined(CONFIG_COUNTER_MCHP_TC_G2)
+#define TIMER DT_NODELABEL(tc0_ch0)
 #elif defined(CONFIG_COUNTER_MCUX_RTC_JDP)
 #define TIMER DT_NODELABEL(rtc)
 #elif defined(CONFIG_COUNTER_MCUX_RTC)
